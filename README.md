@@ -1,7 +1,13 @@
 # 6--Practica---Anotaciones-6
   - Metodos Array 
-  - Busqueda (Filter, Map, find, foreach, some) 
-  - Funcion que modifica SCOPE Global 
-  - Espacio de Memoria 
+  - Busqueda (Filter, Map, find, foreach, some)
+  - Función que modifica el Scope Global
+  - Función que no modifica el Scope Global. 
+  - Tema Variables
+      - Memoria RAM
+      - Comparar Variables
+  - Return
+  - Código Junior
+  - Código Senior
   - Magic Number (malas practicas) 
   - Estructura Modular 
