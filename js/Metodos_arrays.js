@@ -1,10 +1,26 @@
+/* 
+    -------------------------------------
+        Autor: Osvaldo Aquino
+        Nickname: owi
+         
+    -------------------------------------
+*/
 
 
-//con shift + alt + F - prettier hace el trabajo sucio y asegura los ;
-var nombre = 'Owi';
+
+//FORMATEO DE ERRORES
+
+var nombre = 'Owi';                 //con shift + alt + F - prettier hace el trabajo sucio y asegura los ;
 
 
-//generamos una array 
+
+
+/* 
+    -----------------------
+        GENERAMOS ARRAY
+    -----------------------
+*/
+
 var articulos = 
     [
         {nombre : "aspiradora",precio:320},
@@ -68,8 +84,11 @@ var articulosBaratos = articulo.some(function(articulo))
         // hay algo que valide esto "si" va a salir true
     }
 
-
-    /*FUNCIONES */
+/* 
+    -----------------
+        FUNCIONES
+    -----------------
+*/
 // ya saben que las funciones son esos trosos de codigos que son reutilizables
 // las ultimas versiones de javascript nos permiten un desgloze 
 
@@ -117,7 +136,7 @@ function lanzaPantalla({nombre})
         document.write(nombre.toUpperCase() + "<br>");
         console.log(persona.nombre.toUpperCase());
     }
-//llamada de la funcion
+// LLAMADA A LA FUNCIÓN
 //lanzaPantalla
 
 // edad no es una funcion ¿que esta pasando?
@@ -135,7 +154,7 @@ function lanzaPantallNew({edad})
 
 
 
-// ***************************ç
+/ ***************************************************************************************/
 
 var persona03 = 
     {
@@ -152,7 +171,7 @@ function lanzarPantallaNew02(persona)
         var {nombre}=persona;  // esto conseguimos al encerrar el atributo en llaves
         //estamos buscando entre llaves. Buscamos acceder a un atributo que se llama nombre
     }
-// llamada de la funcion 
+// LLAMADA A LA FUNCIÓN
 lanzaPantallaNew02(persona03);
 //no es recomendable tener el mismo variable de nombre de global y local
 // no se perjudican pero no es recomendable
@@ -173,7 +192,15 @@ var persona =
         edad : 44
     }
 
-// funcion que modifica el Scope Global 
+
+
+/* 
+    --------------------------------------------
+        FUNCIÓN QUE MODIFICA EL SCOPE GLOBAL 
+    --------------------------------------------
+*/
+
+
 //Funcion
 function modificarEdad(persona)
     {
@@ -196,8 +223,12 @@ document.write("<br><br>");
 
 
 
+/* 
+    -----------------------------------------------
+        FUNCIÓN QUE NO MODIFICA EL SCOPE GLOBAL 
+    -----------------------------------------------
+*/
 
-// funcion que no modifica el Scope Global 
 //sino es lo que buscamos, es que nos devuelva un objeto 
 function personaMasVieja(persona)
     {
@@ -218,13 +249,19 @@ for (var i=0; i<10; i++)
 
 
 
+/* 
+    ----------------------
+        TEMA VARIABLES
+    ----------------------
+*/
+
 /*
     otro tema
     tema de variables - hay gente que no pone var.
     yo creo que es importante por lo que van a ver ahora
 */
 
-// espacio de memoria
+// ESPACIO DE MEMORIA
 
 //puedes variar este contenido. Datos variables "var"
 var nombre ='owi';
@@ -238,16 +275,21 @@ const Nombre_del_alumno = "Owi";
 
 
 
-/*
-    ----------------------------------
-        Memoria RAM
-        -tODO lo que hagamos  de : 
-        - directorios de Memoria
-        - La memoria ROM no se toca. Siempre que hablamos de memoria hablamos de RAM
-    --------------------------------
-        */
+/* 
+    -------------------
+        MEMORIA RAM
+    -------------------
+*/
 
-//Comparar variables TRUE
+/*
+     -Todo lo que hagamos  de : 
+         - directorios de Memoria
+         - La memoria ROM no se toca. Siempre que hablamos de memoria hablamos de RAM
+
+ */
+
+
+// COMPARAR VARIABLES  TRUE
 var nombre1 = "Elon Musk";
 // hay un piso que vive Toni y en otra cajita o piso vive Elon Musk 
 var nombre1 = "Elon Musk";
@@ -273,7 +315,7 @@ var prueba02 =
 // los objetos no estan comparando el contenido sino es el espacio de Memoria
 // el esapcio en memoria para prueba 1 no es el mismo que el espacio de memoria de prueba 2
 
-//************************ *
+/******************************************************************************/
 
 var prueba01 = 
     {
@@ -305,19 +347,26 @@ var prueba02 = prueba01;
 
 
 
-/*
-    otro tema 
-    "return"
+/* 
+    --------------
+        RETURN
+    --------------
 */
+
+//otro tema "return"
 // tema "ñ" - es mejor no usar 
 // ¿se puede poner acentos? si 
 // javascript te permite pero imaginate esto si perdes una coma imaginate estar 
 // pendiente de un acento 
 
 
+/* 
+    ---------------------
+        CÓDIGO JUNIOR
+    ---------------------
+*/
 
-/*Codigo Junior */
-//objetos
+// OBJETOS
 
 var carlos = 
     {
@@ -351,7 +400,12 @@ function mayor_edad(persona)
 // vamos a mejorarlo
 
 
-// ******************** MEJORANDO nuestro codigo 
+/* 
+    --------------------------------
+        MEJORANDO NUESTRO CÓDIGO
+    --------------------------------
+*/
+
 // porque el número 18, "una persona de otro pais no lo va a entender"
 
 // 'Magic Number' - tu te has sacado ese numero de la manga
@@ -361,7 +415,14 @@ function mayor_edad(persona)
 // necesitariamos una constante que diga mayoria de edad en españa
 
 
-/*Codigo Senior */
+
+/* 
+    ---------------------
+        CÓDIGO SENIOR
+    ---------------------
+*/
+
+
 // Y POR ESO LE PONEmos 18, no porque sea un magic number
 const MAYORIA_EDAD_ESPANYA = 18;
 
